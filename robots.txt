@@ -1,0 +1,6 @@
+# Endereço do GitHub Pages; troque se usar domínio próprio.
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://anavitoriasouzab.github.io/coranel-site/sitemap.xml
