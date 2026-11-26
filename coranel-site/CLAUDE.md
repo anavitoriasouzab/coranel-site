@@ -21,7 +21,7 @@ npx serve .   # or just open index.html in the browser
 - `js/main.js`: all behavior. It depends on GSAP 3.13 + ScrollTrigger + SplitText and Lenis 1.1, loaded from CDNs at the end of `index.html`.
 - `politica-de-privacidade.html`, `termos-de-uso.html`, `404.html`: standalone pages that reuse `style.css` (`.doc-pagina`, `.erro`) and do not load `main.js`.
 - `robots.txt`, `sitemap.xml`, `site.webmanifest`: use the placeholder domain `https://www.exemplo.com.br`.
-- Hero image: a CSS background on `.hero__bg` that uses `image-set()` (WebP, with JPG as fallback). Desktop uses `hero-1672.*`. At 900px and below it switches to `hero-mobile.*`, a vertical crop shown only in the top part of the hero and faded to black. A dark gradient (`--hero-veu`) covers the light right side so the white text stays readable. The variants are generated with `sharp` from the source PNG `assets/img/Advogada em Escritório Elegante.png`. Never upscale past the source width.
+- Hero image: a CSS background on `.hero__bg` that uses `image-set()` (WebP, with JPG as fallback). Desktop uses `--hero-img`: `hero-1920.*` by default, `hero-2560.*` above 1920px or on 1.5x screens above 1100px, and `hero-3840.*` above 2560px or on 1.5x screens above 1500px. At 900px and below it switches to `hero-mobile.*`, a vertical crop shown only in the top part of the hero and faded to black. A dark gradient (`--hero-veu`) covers the light right side so the white text stays readable. The variants are generated with `sharp` from the 4K source `assets/img/hero_livia_coranel_4K_3840x2160.png` (git-ignored, like all PNGs). The mobile crop is `extract({left:46, top:0, width:1745, height:2160})` resized to 1200px wide. Never upscale past the source width.
 
 ## How the motion works
 
