@@ -1,0 +1,13 @@
+# Imagens originais em alta resolução (o site usa as versões WebP/JPG otimizadas)
+*.png
+
+# Configuração local de ferramentas
+.impeccable/
+**/.impeccable/
+.claude/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/

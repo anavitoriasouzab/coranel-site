@@ -1,0 +1,6 @@
+# Projeto de portfólio: troque o domínio de exemplo antes de publicar.
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://www.exemplo.com.br/sitemap.xml
